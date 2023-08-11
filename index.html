@@ -229,7 +229,6 @@ https://templatemo.com/tm-531-reflux
 <section class="section contact-me" data-section="section4">
         <div class="container">
           <div class="section-heading">
-            <form onsubmit="sendEmail(); reset(); return false;">
             <h2>Contact Me</h2>
            <div class="line-dec"></div>
             <span>you can contact me.</span>
@@ -363,21 +362,5 @@ https://templatemo.com/tm-531-reflux
       $(window).scroll(function() {
         checkSection();
       });
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-      }
-    </script>
   </body>
 </html>
